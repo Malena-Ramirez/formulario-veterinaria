@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+
+body {
+    font-family: "Yusei Magic", sans-serif;
+    background: linear-gradient(#5d69b1, #2cb683);
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    color: #ffffff;
+    background-color: #5f4292;
+    padding: .1em 1em;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+figure{
+    width: 40%;
+    margin: .5em auto;
+    display: flex;
+}
+
+img{
+    margin: auto;
+    width: 100%;
+}
+
+#description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #222222;
+}
+
+h2 {
+    background-color: #5f4292;
+    text-align: center;
+    color: #ffffff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+section {
+    width: 70%;
+    margin: auto;
+    background-color: #c5d4e2c0;
+    border-radius: 15px;
+}
+
+.datos {
+    padding: 0 3em 1.5em;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+input,
+select, textarea {
+    border-radius: 10px;
+    background-color: #ecf6ffaf;
+    border: 0px;
+    padding: .8em 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#male,
+#female, .checkbox {
+    width: min-content;
+}
+
+label {
+    font-size: 16px;
+}
+
+label:not(.inline){
+    display: block;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+button {
+    border-radius: 5px;
+    background-color: #5f4292;
+    border: 0px;
+    color: #ffffff;
+    width: 10em;
+    padding: 1em;
+    margin: 20px 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    transition: all .5s;
+    transform: scale3d(1.05, 1.05, 1.05);
+    border: #ffffff 3px solid;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    figure {
+        width: 50%;
+    }
+    section {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 768px){
+    main {
+        width: 90%;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    #description {
+        font-size: 1rem;
+    }
+    .datos {
+        padding: 0 1em 1.5em;
+    }
+}

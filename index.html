@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulario - Veterinaria</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Completa los datos sobre tu mascota</h1>
+        </header>
+        <main>
+            <figure>
+                <img src="https://transbordadordigital.com/wp-content/uploads/2020/10/logomascotas.png" alt="Imagen de mascotas" />
+            </figure>
+            <p id="description">
+                Completa los datos sobre tu mascota, así nos aseguramos de cuidar mejor de tu mejor amigo.
+            </p>
+            <form id="survey-form">
+                <section>
+                    <h2>Datos del dueño</h2>
+                    <div class="datos">
+                        <div class="form-group">
+                            <label for="name" id="name-label">Nombre:</label>
+                            <input type="text" name="name" id="name" placeholder="Ej:Juan Perez" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email" id="email-label">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Ej:xxx@mail.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono de contacto:</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Ej: 123456789" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="city">Ciudad de residencia:</label>
+                            <select name="city" id="dropdown" required>
+                                <option value="">-Seleccionar-</option>
+                                <option value="bog">Bogotá</option>
+                                <option value="med">Medellín</option>
+                                <option value="cal">Cali</option>
+                                <option value="bar">Barranquilla</option>
+                                <option value="car">Cartagena</option>
+                        </select>
+                        </div>                        
+                    </div>
+                </section>
+                <section>
+                    <h2>Información de la mascota</h2>
+                    <div class="datos">
+                        <div class="form-group">
+                            <label for="pet">Tipo de mascota</label>
+                            <select name="pet" id="pet" required>
+                                <option value="">-Seleccionar-</option>
+                                <option value="Dog">Perro</option>
+                                <option value="Cat">Gato</option>
+                                <option value="bird">Ave</option>
+                                <option value="fish">Pez</option>
+                                <option value="Other">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="namePet">Nombre:</label>
+                            <input type="text" name="namePet" id="namePet" placeholder="Tin" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="number" id="number-label">Edad (años):</label>
+                            <input type="number" name="number" id="number" min="1" max="20" placeholder="3" />
+                        </div>
+                        <div class="form-group">
+                            <label for="sex">Sexo:</label>
+                            <label for="male" class="inline">Macho</label>
+                            <input type="radio" name="sex" id="male" value="male" />
+                            <label for="female" class="inline">Hembra</label>
+                            <input type="radio" name="sex" id="female" value="female" />
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Fecha de última vacunación:</label>
+                            <input type="date" name="date" id="date" required />
+                        </div>
+                        <div class="form-group">
+                            <p> 
+                                Seleccione los servicios que le gustaría que su mascota recibiera con nosotros
+                            </p>
+                            <div>
+                                <input type="checkbox" name="vet" value="vet" class="checkbox"/>
+                                <label for="vet" class="inline">Valoración veterinaria</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="sterilization" value="sterilization" class="checkbox"/>
+                                <label for="sterilization" class="inline">Esterilización</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="vaccination" value="vaccination" class="checkbox"/>
+                                <label for="vaccination" class="inline">Vacunación</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="grooming" value="grooming" class="checkbox"/>
+                                <label for="grooming" class="inline">Peluquería</label> 
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p>
+                                Si quieres escribirnos alguna información adicional puedes hacerlo a continuación
+                            </p>
+                            <textarea name="message" id="" cols="30" rows="15" placeholder="Escribe tu mensaje aquí"></textarea>
+                        </div>
+                        <div class="button-container">
+                            <button type="submit" id="submit"><b>Enviar</b></button>
+                        </div>                        
+                    </div>
+                </section>
+            </form>
+        </main>
+        
+        <footer>
+            <p>&copy; Malena Ramirez</p>
+        </footer>
+    </body>
+</html>
