@@ -10,21 +10,21 @@ header {
     text-align: center;
     color: #ffffff;
     background-color: #5f4292;
-    padding: .1em 1em;
+    padding: 0.1em 1em;
 }
 
-main{
+main {
     width: 80%;
     margin: auto;
 }
 
-figure{
+figure {
     width: 40%;
-    margin: .5em auto;
+    margin: 0.5em auto;
     display: flex;
 }
 
-img{
+img {
     margin: auto;
     width: 100%;
 }
@@ -55,22 +55,24 @@ section {
     padding: 0 3em 1.5em;
 }
 
-.form-group{
+.form-group {
     margin-bottom: 15px;
 }
 
 input,
-select, textarea {
+select,
+textarea {
     border-radius: 10px;
     background-color: #ecf6ffaf;
     border: 0px;
-    padding: .8em 1em;
+    padding: 0.8em 1em;
     width: 100%;
     box-sizing: border-box;
 }
 
 #male,
-#female, .checkbox {
+#female,
+.checkbox {
     width: min-content;
 }
 
@@ -78,11 +80,11 @@ label {
     font-size: 16px;
 }
 
-label:not(.inline){
+label:not(.inline) {
     display: block;
 }
 
-.button-container{
+.button-container {
     display: flex;
     justify-content: center;
 }
@@ -96,9 +98,9 @@ button {
     margin: 20px 10px;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
-    transition: all .5s;
+    transition: all 0.5s;
     transform: scale3d(1.05, 1.05, 1.05);
     border: #ffffff 3px solid;
 }
@@ -114,10 +116,9 @@ footer {
     section {
         width: 90%;
     }
-
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     main {
         width: 90%;
     }
